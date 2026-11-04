@@ -7,7 +7,7 @@ ENABLE_WARP="${ENABLE_WARP:-1}"
 ENABLE_TOR="${ENABLE_TOR:-1}"
 ENABLE_DIRECT="${ENABLE_DIRECT:-1}"
 WARP_DIR="${WARP_DIR:-/data/warp}"
-PROXY_FILE=/tmp/proxies.txt
+PROXY_FILE=/app/proxies.txt
 
 NOBODY=(setpriv --reuid=65534 --regid=65534 --clear-groups)
 CLEAN=(env -u SOCKS_USER -u SOCKS_PASS -u SOCKS_PASS_FILE)
